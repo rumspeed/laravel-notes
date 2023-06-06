@@ -2,9 +2,9 @@
 
 namespace Rumspeed\LaravelNotes;
 
+use Rumspeed\LaravelNotes\Commands\LaravelNotesCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use Rumspeed\LaravelNotes\Commands\LaravelNotesCommand;
 
 class LaravelNotesServiceProvider extends PackageServiceProvider
 {
