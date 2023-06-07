@@ -3,10 +3,10 @@
 namespace Rumspeed\LaravelNotes\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
-use Orchestra\Testbench\TestCase as Orchestra;
+use Orchestra\Testbench\TestCase as OrchestraTestCase;
 use Rumspeed\LaravelNotes\LaravelNotesServiceProvider;
 
-class TestCase extends Orchestra
+abstract class TestCase extends OrchestraTestCase
 {
     protected function setUp(): void
     {
