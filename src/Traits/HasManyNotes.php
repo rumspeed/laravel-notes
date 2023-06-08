@@ -14,8 +14,6 @@ trait HasManyNotes
 {
     /**
      * The notes relationship.
-     * 
-     * @return \Illuminate\Database\Eloquent\Relations\MorphMany
      */
     public function notes(): MorphMany
     {
