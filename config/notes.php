@@ -9,7 +9,7 @@ return [
 
     'authors' => [
         'table' => 'users',
-        'model' => App\Models\User::class,
+        'model' => App\Models\User::class, // @phpstan-ignore-line
     ],
 
     'notes' => [
