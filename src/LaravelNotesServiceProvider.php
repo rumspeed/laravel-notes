@@ -2,7 +2,6 @@
 
 namespace Rumspeed\LaravelNotes;
 
-use Rumspeed\LaravelNotes\Commands\LaravelNotesCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
 
@@ -18,8 +17,6 @@ class LaravelNotesServiceProvider extends PackageServiceProvider
         $package
             ->name('laravel-notes')
             ->hasConfigFile()
-            ->hasViews()
-            ->hasMigration('create_laravel-notes_table')
-            ->hasCommand(LaravelNotesCommand::class);
+            ->hasMigration('create_notes_table');
     }
 }
