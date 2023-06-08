@@ -9,13 +9,13 @@ use Rumspeed\LaravelNotes\Models\Note;
 
 /**
  * Trait     AuthoredNotes
- *
- * @property  \Illuminate\Database\Eloquent\Collection  authoredNotes
  */
 trait AuthoredNotes
 {
     /**
      * Relation to Many notes.
+     * 
+     * @return \Illuminate\Database\Eloquent\Relations\HasMany
      */
     public function authoredNotes(): HasMany
     {

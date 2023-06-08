@@ -8,8 +8,6 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  * Trait     HasOneNote
- *
- * @property  \Rumspeed\LaravelNotes\Models\Note  note
  */
 trait HasOneNote
 {

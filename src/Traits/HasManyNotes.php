@@ -9,13 +9,13 @@ use Illuminate\Database\Eloquent\Relations\MorphMany;
 
 /**
  * Class     HasManyNotes
- *
- * @property  \Illuminate\Database\Eloquent\Collection  notes
  */
 trait HasManyNotes
 {
     /**
      * The notes relationship.
+     * 
+     * @return \Illuminate\Database\Eloquent\Relations\MorphMany
      */
     public function notes(): MorphMany
     {
