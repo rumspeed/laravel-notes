@@ -36,10 +36,9 @@ trait HasOneNote
     /**
      * Create a note.
      *
-     * @param  string                                    $content
+     * @param  string  $content
      * @param  \Illuminate\Database\Eloquent\Model|null  $author
-     * @param  bool                                      $reload
-     *
+     * @param  bool  $reload
      * @return \Rumspeed\LaravelNotes\Models\Note
      */
     public function createNote($content, $author = null, $reload = true)
@@ -63,10 +62,8 @@ trait HasOneNote
     /**
      * Update a note.
      *
-     * @param  string                                    $content
-     * @param  \Illuminate\Database\Eloquent\Model|null  $author
-     * @param  bool                                      $reload
-     *
+     * @param  string  $content
+     * @param  bool  $reload
      * @return bool
      */
     public function updateNote($content, Model $author = null, $reload = true)
@@ -90,16 +87,14 @@ trait HasOneNote
     /**
      * Prepare note attributes.
      *
-     * @param  string                                    $content
-     * @param  \Illuminate\Database\Eloquent\Model|null  $author
-     *
+     * @param  string  $content
      * @return array
      */
     protected function prepareNoteAttributes($content, Model $author = null)
     {
         return [
             'author_id' => is_null($author) ? $this->getCurrentAuthorId() : $author->getKey(),
-            'content'   => $content,
+            'content' => $content,
         ];
     }
 

@@ -9,7 +9,6 @@ use Illuminate\Database\Eloquent\Model;
 use Rumspeed\LaravelNotes\Traits\AuthoredNotes;
 use Rumspeed\LaravelNotes\Traits\HasManyNotes;
 
-
 /**
  * Class     User
  *
