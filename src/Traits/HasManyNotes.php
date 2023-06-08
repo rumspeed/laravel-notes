@@ -16,8 +16,6 @@ trait HasManyNotes
 {
     /**
      * The notes relationship.
-     *
-     * @return \Illuminate\Database\Eloquent\Relations\MorphMany
      */
     public function notes(): MorphMany
     {
@@ -27,10 +25,9 @@ trait HasManyNotes
     /**
      * Create a note.
      *
-     * @param  string                                    $content
+     * @param  string  $content
      * @param  \Illuminate\Database\Eloquent\Model|null  $author
-     * @param  bool                                      $reload
-     *
+     * @param  bool  $reload
      * @return \Rumspeed\LaravelNotes\Models\Note
      */
     public function createNote($content, $author = null, $reload = true)
@@ -56,7 +53,6 @@ trait HasManyNotes
      * Retrieve a note by its ID.
      *
      * @param  int  $id
-     *
      * @return \Illuminate\Database\Eloquent\Model
      */
     public function findNote($id)
@@ -72,16 +68,14 @@ trait HasManyNotes
     /**
      * Prepare note attributes.
      *
-     * @param  string                                    $content
-     * @param  \Illuminate\Database\Eloquent\Model|null  $author
-     *
+     * @param  string  $content
      * @return array
      */
     protected function prepareNoteAttributes($content, Model $author = null)
     {
         return [
             'author_id' => is_null($author) ? $this->getCurrentAuthorId() : $author->getKey(),
-            'content'   => $content,
+            'content' => $content,
         ];
     }
 

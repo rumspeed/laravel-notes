@@ -16,7 +16,6 @@ use Illuminate\Database\Eloquent\Model;
  * @property  int                                  $author_id
  * @property  \Carbon\Carbon                       $created_at
  * @property  \Carbon\Carbon                       $updated_at
- *
  * @property  \Illuminate\Database\Eloquent\Model  $author
  * @property  \Illuminate\Database\Eloquent\Model  $noteable
  */
@@ -48,15 +47,13 @@ class Note extends Model
      * @var array
      */
     protected $casts = [
-        'id'          => 'integer',
+        'id' => 'integer',
         'noteable_id' => 'integer',
-        'author_id'   => 'integer',
+        'author_id' => 'integer',
     ];
 
     /**
      * Note constructor.
-     *
-     * @param  array  $attributes
      */
     public function __construct(array $attributes = [])
     {

@@ -14,7 +14,7 @@ return [
 
     'notes' => [
         'table' => 'notes',
-        'model' => Rumspeed\LaravelNotes\Models\Note::class
+        'model' => Rumspeed\LaravelNotes\Models\Note::class,
     ],
 
 ];

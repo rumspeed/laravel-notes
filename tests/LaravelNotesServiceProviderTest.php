@@ -16,7 +16,7 @@ class LaravelNotesServiceProviderTest extends TestCase
      | -----------------------------------------------------------------
      */
 
-    /** @var  \Rumspeed\LaravelNotes\LaravelNotesServiceProvider */
+    /** @var \Rumspeed\LaravelNotes\LaravelNotesServiceProvider */
     protected $provider;
 
     /* -----------------------------------------------------------------

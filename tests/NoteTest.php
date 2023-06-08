@@ -154,7 +154,7 @@ class NoteTest extends TestCase
         $user = $this->createUser();
 
         $created = $user->createNote($content = 'Hello world #1');
-        $note    = $user->findNote($created->id);
+        $note = $user->findNote($created->id);
 
         static::assertSame($note->id, $created->id);
     }
