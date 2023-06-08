@@ -1,10 +1,11 @@
 {
     "name": "rumspeed/laravel-notes",
-    "description": "Add notes to your Elequent models",
+    "description": "Add notes to your Eloquent models",
     "keywords": [
         "rumspeed",
         "laravel",
-        "laravel-notes"
+        "laravel-notes",
+        "notes"
     ],
     "homepage": "https://github.com/rumspeed/laravel-notes",
     "license": "MIT",
