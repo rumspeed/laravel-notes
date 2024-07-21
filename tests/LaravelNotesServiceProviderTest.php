@@ -43,8 +43,7 @@ class LaravelNotesServiceProviderTest extends TestCase
      | -----------------------------------------------------------------
      */
 
-    /** @test */
-    public function it_can_be_instantiated(): void
+    public function test_it_can_be_instantiated(): void
     {
         $expectations = [
             \Illuminate\Support\ServiceProvider::class,
