@@ -16,6 +16,7 @@ use Rumspeed\LaravelNotes\Traits\HasManyNotes;
  */
 class User extends Model
 {
+    use AuthoredNotes;
     /* -----------------------------------------------------------------
      |  Traits
      | -----------------------------------------------------------------
@@ -23,7 +24,6 @@ class User extends Model
 
     use HasFactory;
     use HasManyNotes;
-    use AuthoredNotes;
 
     /* -----------------------------------------------------------------
      |  Properties

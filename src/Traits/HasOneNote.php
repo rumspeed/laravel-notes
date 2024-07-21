@@ -64,7 +64,7 @@ trait HasOneNote
      * @param  bool  $reload
      * @return bool
      */
-    public function updateNote($content, Model $author = null, $reload = true)
+    public function updateNote($content, ?Model $author = null, $reload = true)
     {
         $updated = $this->note->update(
             $this->prepareNoteAttributes($content, $author)
@@ -88,7 +88,7 @@ trait HasOneNote
      * @param  string  $content
      * @return array
      */
-    protected function prepareNoteAttributes($content, Model $author = null)
+    protected function prepareNoteAttributes($content, ?Model $author = null)
     {
         return [
             'author_id' => is_null($author) ? $this->getCurrentAuthorId() : $author->getKey(),
