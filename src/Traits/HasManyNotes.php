@@ -69,7 +69,7 @@ trait HasManyNotes
      * @param  string  $content
      * @return array
      */
-    protected function prepareNoteAttributes($content, Model $author = null)
+    protected function prepareNoteAttributes($content, ?Model $author = null)
     {
         return [
             'author_id' => is_null($author) ? $this->getCurrentAuthorId() : $author->getKey(),

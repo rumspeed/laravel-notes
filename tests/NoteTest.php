@@ -17,8 +17,7 @@ class NoteTest extends TestCase
      | -----------------------------------------------------------------
      */
 
-    /** @test */
-    public function it_can_create_a_note(): void
+    public function test_it_can_create_a_note(): void
     {
         $post = $this->createPost();
 
@@ -33,8 +32,7 @@ class NoteTest extends TestCase
         static::assertNull($post->note->author);
     }
 
-    /** @test */
-    public function it_should_create_single_note_for_has_one_note_trait(): void
+    public function test_it_should_create_single_note_for_has_one_note_trait(): void
     {
         $post = $this->createPost();
 
@@ -59,8 +57,7 @@ class NoteTest extends TestCase
         static::assertCount(1, Note::all());
     }
 
-    /** @test */
-    public function it_can_create_with_author(): void
+    public function test_it_can_create_with_author(): void
     {
         $user = $this->createUser();
         $post = $this->createPost();
@@ -77,8 +74,7 @@ class NoteTest extends TestCase
         static::assertEquals($user->id, $post->note->author->id);
     }
 
-    /** @test */
-    public function it_can_update_note(): void
+    public function test_it_can_update_note(): void
     {
         $post = $this->createPost();
 
@@ -103,8 +99,7 @@ class NoteTest extends TestCase
         static::assertCount(1, Note::all());
     }
 
-    /** @test */
-    public function it_can_reverse_relation(): void
+    public function test_it_can_reverse_relation(): void
     {
         $post = $this->createPost();
 
@@ -122,7 +117,6 @@ class NoteTest extends TestCase
      | -----------------------------------------------------------------
      */
 
-    /** @test */
     public function it_can_add_note(): void
     {
         $user = $this->createUser();
@@ -135,7 +129,6 @@ class NoteTest extends TestCase
         static::assertNull($note->author);
     }
 
-    /** @test */
     public function it_can_add_note_without_get_current_author_id_method(): void
     {
         $user = $this->createUserWithAuthorId();
@@ -148,7 +141,6 @@ class NoteTest extends TestCase
         static::assertSame($user->id, $note->author->id);
     }
 
-    /** @test */
     public function it_can_find_note_by_its_id(): void
     {
         $user = $this->createUser();
@@ -159,7 +151,6 @@ class NoteTest extends TestCase
         static::assertSame($note->id, $created->id);
     }
 
-    /** @test */
     public function it_can_retrieve_authored_notes(): void
     {
         $user = $this->createUser();
@@ -174,7 +165,6 @@ class NoteTest extends TestCase
         static::assertCount(2, $user->authoredNotes()->get());
     }
 
-    /** @test */
     public function it_must_retrieve_authored_notes_foreach_owner(): void
     {
         $userOne = $this->createUserWithAuthorId();

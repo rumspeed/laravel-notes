@@ -9,15 +9,15 @@ use Illuminate\Database\Eloquent\Model;
 /**
  * Class     Note
  *
- * @property  int                                  $id
- * @property  string                               $content
- * @property  int                                  $noteable_id
- * @property  string                               $noteable_type
- * @property  int                                  $author_id
- * @property  \Carbon\Carbon                       $created_at
- * @property  \Carbon\Carbon                       $updated_at
- * @property  \Illuminate\Database\Eloquent\Model  $author
- * @property  \Illuminate\Database\Eloquent\Model  $noteable
+ * @property int $id
+ * @property string $content
+ * @property int $noteable_id
+ * @property string $noteable_type
+ * @property int $author_id
+ * @property \Carbon\Carbon $created_at
+ * @property \Carbon\Carbon $updated_at
+ * @property \Illuminate\Database\Eloquent\Model $author
+ * @property \Illuminate\Database\Eloquent\Model $noteable
  */
 class Note extends Model
 {
