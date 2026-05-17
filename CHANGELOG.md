@@ -2,6 +2,14 @@
 
 All notable changes to `laravel-notes` will be documented in this file.
 
+## v1.3.0 - 2026-05-17
+
+### What's Changed
+
+* Update for Laravel v13 Support  by @scotrumery in https://github.com/rumspeed/laravel-notes/pull/9
+
+**Full Changelog**: https://github.com/rumspeed/laravel-notes/compare/v1.2.0...v1.3.0
+
 ## v1.2.0 - 2025-05-19
 
 ### What's Changed
